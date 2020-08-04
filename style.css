@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 90vh;
+    background: url(imagens/paisagem.jpg) no-repeat;
+    background-size: cover;
+}
+
+header #navegacao {
+    padding-top: 1px;
+    margin-top: -5px;
+}
+
+header #navegacao h1 {
+    font-size: 35px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+header #navegacao nav {
+    text-align: center;
+}
+
+header #navegacao li {
+    display: inline-block;
+    list-style: none;
+}
+
+header #navegacao li a {
+    font-size: 18px;
+    font-weight: bolder;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    text-align: center;
+    transition: 200ms;
+}
+
+header #navegacao li a:hover {
+    color: #00ff00;
+}
+
+header #ajude {
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+}
+
+header #ajude button {
+    color: white;
+    font-weight: bolder;
+    font-size: 15px;
+    width: 300px;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #005baf;
+    margin-top: 2px;
+    transition: 200ms;
+}
+
+header #ajude button:hover {
+    background-color: #016ed4;
+    transform: scale(1.2);
+}
+
+article #derrubadas {
+    display: flex;
+    flex: 1;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    background: url(imagens/arvore.webp) no-repeat;
+    background-position: 50vw;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+article #derrubadas p {
+    text-align: left;
+    padding: 20px;
+    padding-bottom: 0;
+    color: black;
+}
+
+article #plantadas {
+    color: #000000;
+    display: flex;
+    flex: 1;
+    align-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 90vh;
+    background: url(imagens/vaso-arvore.png) #00c40033 no-repeat;
+    background-position-y: 8vh;
+    font-weight: bold;
+}
+
+article #plantadas p {
+    text-align: left;
+    font-size: 35px;
+    margin: auto;
+    margin-left: 40%;
+    font-size: 30px;
+}
+
+aside #slider {
+    display: flex;
+    color: #00ff00;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    font-size: 25px;
+    width: 100%;
+    height: 90vh;
+    background: url(imagens/desmatamento-IV.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+aside #slider .slide {
+    transition: opacity 600ms;
+    margin: auto;
+    margin-top: 85px;
+    opacity: 0;
+    position: absolute;
+    object-fit: cover;
+    width: 60%;
+    min-width: 320px;
+    height: 70vh;
+    border: 2px solid #00ff00;
+    text-align: center;
+}
+
+aside #slider .slide.selecionada {
+    opacity: 1;
+}
