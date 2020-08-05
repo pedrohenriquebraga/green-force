@@ -169,3 +169,10 @@ aside #slider #slide .slide.selecionada {
         font-size: 18px;
     }
 }
+
+@media (max-width: 425px) {
+    html {
+        font-size: 40%;
+
+    }
+}
