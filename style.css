@@ -4,6 +4,7 @@ html {
 
 body {
     margin: 0;
+    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -20,14 +21,15 @@ header {
     background-size: cover;
 }
 
-header #navegacao h1 {
-    font-size: 3.5rem;
+header h1 {
+    font-size: 4.5rem;
     color: white;
     font-family: 'Courier New', Courier, monospace;
 }
 
-header #navegacao li {
-    display: inline-block;
+header #navegacao ul {
+    display: flex;
+    flex-direction: row;
     list-style: none;
 }
 
@@ -130,7 +132,10 @@ aside #slider #slide {
 
 aside #slider #slide .slide {
     width: 80%;
+    max-width: 800px;
+    min-width: 300px;
     height: 70vh;
+    min-height: 300px;
     transition: opacity 600ms;
     margin: auto;
     opacity: 0;
