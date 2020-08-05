@@ -9,6 +9,7 @@ body {
 
 header {
     display: flex;
+    justify-content: center;
     align-items: center;
     align-content: center;
     text-align: center;
@@ -46,7 +47,7 @@ header #navegacao ul li a:hover {
 header #ajude {
     color: white;
     margin: auto;
-    margin-top: 7.0rem;
+    margin-top: 10rem;
     transform: translateX(5%);
 }
 
@@ -67,46 +68,39 @@ header #ajude button:hover {
     transform: scale(1.2);
 }
 
-article #derrubadas {
+article .arvores {
     display: flex;
     flex: 1;
+    justify-content: space-between;
+    text-align: center;
     align-content: center;
     align-items: center;
     width: 100%;
     height: 90vh;
-    background: url(imagens/arvore.webp) no-repeat;
-    background-position: 60vw;
-    font-size: 2.8rem;
+    font-size: 2.4rem;
     font-weight: bold;
 }
 
-article #derrubadas p {
-    text-align: left;
+article .arvores p {
     padding: 2.0rem;
     padding-bottom: 0;
     color: black;
 }
 
-article #plantadas {
-    color: #000000;
-    display: flex;
-    flex: 1;
-    align-content: flex-end;
-    align-items: flex-end;
-    flex-direction: column-reverse;
-    width: 100%;
-    height: 90vh;
-    background: url(imagens/vaso-arvore.png) #00c40033 no-repeat;
-    background-position-y: 7vh;
-    font-weight: bold;
+article .arvores img {
+    width: 55%;
+    min-width: 320px;
+    height: 70vh;
+    max-height: 70vh;
+    margin-left: 5px;
+    image-rendering: optimizeSpeed;
+    object-fit: cover;
+    
 }
 
-article #plantadas p {
-    text-align: left;
-    font-size: 3.5rem;
-    margin: auto;
-    margin-left: 40%;
-    font-size: 3.0rem;
+article .arvores#plantadas {
+    flex-direction: row-reverse;
+    background-color: #92fa92d5;
 }
 
 aside #slider {
@@ -163,6 +157,20 @@ aside #slider #slide .slide.selecionada {
     header #ajude {
         margin-top: 7.0rem;
         transform: translateX(2%);
+    }
+
+    article .arvores {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    article .arvores img {
+        height: 40vh;
+    }
+
+    article .arvores#plantadas {
+        justify-content: center;
+        flex-direction: column;
     }
 
     #slider h3 {
