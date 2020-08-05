@@ -92,7 +92,7 @@ article .arvores p {
 
 article .arvores img {
     width: 55%;
-    min-width: 320px;
+    min-width: 300px;
     height: 70vh;
     max-height: 70vh;
     margin-left: 5px;
@@ -100,7 +100,7 @@ article .arvores img {
     border-radius: 10px;
     border: 3px solid springgreen;
     box-shadow: -3px 2px 8px 1px #0000009c;
-    margin: 0px auto 0px auto;
+    margin: 0px 5px 0px 5px;
 }
 
 article .arvores#plantadas {
@@ -132,10 +132,9 @@ aside #slider #slide {
 
 aside #slider #slide .slide {
     width: 80%;
-    max-width: 800px;
+    max-width: 1500px;
     min-width: 300px;
     height: 70vh;
-    min-height: 300px;
     transition: opacity 600ms;
     margin: auto;
     opacity: 0;
@@ -149,7 +148,42 @@ aside #slider #slide .slide.selecionada {
     opacity: 1;
 }
 
-@media (max-width: 745px) {
+
+@media (min-width: 1200px) {
+    html {
+        font-size: 120%;
+    }
+    header {
+        height: 90vh;
+    }
+
+    header #navegacao {
+        transform: translateX(-3%);
+    }
+
+    header #ajude {
+        margin-top: 8.0rem;
+        transform: translateX(2%);
+    }
+
+    article .arvores {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    article .arvores img {
+        margin-top: 50px;
+        height: 85vh;
+    }
+
+    article .arvores#plantadas {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 1000px) {
 
     html {
         font-size: 55%;
@@ -182,7 +216,12 @@ aside #slider #slide .slide.selecionada {
     }
 
     #slider h3 {
-        font-size: 18px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #slide .slide {
+        max-height: 300px;
     }
 }
 
