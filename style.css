@@ -82,7 +82,7 @@ article .arvores {
 }
 
 article .arvores p {
-    padding: 2.0rem;
+    padding: 0.5rem;
     padding-bottom: 0;
     color: black;
 }
@@ -93,9 +93,11 @@ article .arvores img {
     height: 70vh;
     max-height: 70vh;
     margin-left: 5px;
-    image-rendering: optimizeSpeed;
     object-fit: cover;
-    
+    border-radius: 10px;
+    border: 3px solid springgreen;
+    box-shadow: -3px 2px 8px 1px #0000009c;
+    margin: 0px auto 0px auto;
 }
 
 article .arvores#plantadas {
