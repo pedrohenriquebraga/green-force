@@ -32,6 +32,7 @@ header #navegacao li {
 }
 
 header #navegacao ul li a {
+    background-color: #016ED4;
     font-size: 1.8rem;
     font-weight: bolder;
     color: white;
@@ -41,7 +42,7 @@ header #navegacao ul li a {
 }
 
 header #navegacao ul li a:hover {
-    color: #00ff00;
+    background-color: steelblue;
 }
 
 header #ajude {
