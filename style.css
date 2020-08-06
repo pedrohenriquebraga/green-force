@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
 html {
     font-size: 62.5%;
 }
@@ -10,65 +12,42 @@ body {
 
 header {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    text-align: center;
     flex-direction: column;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    font-size: 20px;
+    color: white;
     width: 100%;
     height: 90vh;
-    background: url(imagens/paisagem.jpg) no-repeat;
+    background:url(imagens/paisagem.jpg) no-repeat;
     background-size: cover;
 }
 
 header h1 {
-    font-size: 4.5rem;
-    color: white;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: 70px;
+    font-family: 'Amatic SC',cursive;
 }
 
-header #navegacao ul {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
+header h2 {
+    margin-top: -200px;
 }
 
-header #navegacao ul li a {
-    background-color: #016ED4;
-    font-size: 1.8rem;
-    font-weight: bolder;
-    color: white;
+header a {
     text-decoration: none;
-    padding: 1.5rem;
-    transition: 200ms;
-}
-
-header #navegacao ul li a:hover {
-    background-color: steelblue;
-}
-
-header #ajude {
     color: white;
-    margin: auto;
-    margin-top: 10rem;
-    transform: translateX(5%);
-}
-
-header #ajude button {
-    color: white;
-    font-weight: bolder;
-    font-size: 1.5rem;
-    width: 30.0rem;
-    padding: 2.0rem;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 20px 60px;
+    background-color: #2E7100;
     border: none;
     border-radius: 5px;
-    background-color: #005baf;
     transition: 200ms;
 }
 
-header #ajude button:hover {
-    background-color: #016ed4;
-    transform: scale(1.2);
+header a:hover {
+    background-color: #3f9e00;
 }
 
 article .arvores {
@@ -149,7 +128,7 @@ aside #slider #slide .slide.selecionada {
 }
 
 
-@media (min-width: 1200px) {
+@media (min-width: 1800px) {
     html {
         font-size: 120%;
     }
@@ -227,7 +206,12 @@ aside #slider #slide .slide.selecionada {
 
 @media (max-width: 425px) {
     html {
-        font-size: 40%;
+        font-size: 43%;
 
+    }
+
+    header {
+        height: 65vh;
+        text-align: center;
     }
 }
