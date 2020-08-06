@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajude o Meio Ambiente</title>
+    <link rel="stylesheet" href="/styles/form.css">
+</head>
+<body>
+    <header>
+        <h1>Ajudando o Meio Ambiente</h1>
+    </header>
+    <section>
+        <img src="" alt="Foto de uma pessoa plantando uma árvore.">
+        <p>Para ajudar o meio ambiente não precisa de muita coisa. Seu objetivo é simples: </p>
+        <ol>
+            <li>Plante uma árvore em um bom local.</li>
+            <li>Preencha nosso formulário, mandando uma foto de sua árvore plantada.</li>
+            <li>E o mais importante, continue cuidando dela, até ela se tornar uma árvore grande e fabulosa!!</li>
+        </ol>
+        <p>Vale ressaltar que sua imagem aparecerá em nosso mural na <a href="/index.html">Página Inicial</a>, então tire uma boa foto! Nosso objetivo é mostrar que com a ajuda de todos o mundo pode ser salvo!</p>
+    </section>
+
+    <form action="" method="post">
+        <fieldset>
+            <label for="name">Nome Completo</label>
+            <input type="text" name="name" id="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="state">Selecione seu estado</label>
+            <select name="state" id="state" required></select>
+
+            <label for="city">Selecione sua cidade</label>
+            <select name="city" id="city" disabled="disabled" required></select>
+        </fieldset>
+        <fieldset>
+            <label for="title">Título da imagem</label>
+            <input type="text" name="title" id="title">
+
+            <label for="desc">Descrição da Imagem</label>
+            <input type="text" name="desc" id="desc">
+
+            <label for="image">URL da imagem</label>
+            <input type="url" name="image" id="image">
+
+            <div id="preview"></div>
+        </fieldset>
+    </form>
+</body>
+</html>
