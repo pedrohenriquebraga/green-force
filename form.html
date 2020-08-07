@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ajude o Meio Ambiente</title>
     <link rel="stylesheet" href="/styles/form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js" integrity="sha512-VZ6m0F78+yo3sbu48gElK4irv2dzPoep8oo9LEjxviigcnnnNvnTOJRSrIhuFk68FMLOpiNz+T77nNY89rnWDg==" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <h1>Ajudando o Meio Ambiente</h1>
+        <a href="/index.html"><span class="fa fa-home">Home</span></a>
+        <h1><a href="/index.html">Green Force</a></h1>
     </header>
+    <h2>Ajudando o Meio Ambiente</h2>
     <section>
-        <img src="" alt="Foto de uma pessoa plantando uma árvore.">
+        <img src="imagens/plantando-arvore.jpg" alt="Foto de uma pessoa plantando uma árvore.">
         <p>Para ajudar o meio ambiente não precisa de muita coisa. Seu objetivo é simples: </p>
         <ol>
             <li>Plante uma árvore em um bom local.</li>
@@ -23,14 +27,15 @@
 
     <form action="" method="post">
         <fieldset>
-            <label for="name">Nome Completo</label>
+            <label for="name">Nome</label>
             <input type="text" name="name" id="name" required>
 
             <label for="email">Email</label>
             <input type="email" name="email" id="email" required>
 
             <label for="state">Selecione seu estado</label>
-            <select name="state" id="state" required></select>
+            <select name="state" id="state" required>
+            </select>
 
             <label for="city">Selecione sua cidade</label>
             <select name="city" id="city" disabled="disabled" required></select>
@@ -45,8 +50,14 @@
             <label for="image">URL da imagem</label>
             <input type="url" name="image" id="image">
 
-            <div id="preview"></div>
+            <div id="preview">
+                <h3>Título</h3>
+                <img src="imagens/plantando-arvore.jpg" alt="">
+                <p>Descrição da imagem acima</p>
+            </div>
         </fieldset>
     </form>
+    
+    <script src="scripts/form.js"></script>
 </body>
 </html>
