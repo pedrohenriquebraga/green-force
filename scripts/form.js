@@ -15,17 +15,14 @@ function addStates() {
 addStates()
 
 function addCities(event) {
-    const inputStates = document.querySelector("select#state")
     const inputCities = document.querySelector("select#city")
 
     inputCities.innerHTML = ''
     inputCities.disabled = true
 
     const ufValue = event.target.value
-    const indexOfState = event.target.selectedIndex
 
     const url = `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${ufValue}/municipios?orderBy=nome`
-
     axios.get(url).then((cities, err) => {
         if (err) {
             return console.error(err)
@@ -38,12 +35,21 @@ function addCities(event) {
 
     })
     inputCities.disabled = false
-
 }
 
 document.querySelector("select#state").addEventListener("change", addCities)
 
 function preview() {
-    const boxOfPreview = document.querySelector("div#preview")
-    const titlePreview
+    const title = document.querySelector("#title").value
+    const image = document.querySelector("#image").value
+    const desc = document.querySelector("#desc").value
+
+    const imgOfPreview = document.querySelector("div#preview img")
+    const titlePreview = document.querySelector("div#preview h3")
+    const descPreview = document.querySelector("div#preview p em")
+
+    titlePreview.innerHTML = title || "Título"
+    descPreview.innerHTML = desc || "Descrição"
+    imgOfPreview.setAttribute("src", image)
+
 }

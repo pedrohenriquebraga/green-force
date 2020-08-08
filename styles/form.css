@@ -46,6 +46,11 @@ section {
     font-size: 18px;
 }
 
+section img {
+    width: 50%;
+    min-width: 310px;
+}
+
 section a {
     color: #0400ff;
     font-weight: bold;
@@ -83,6 +88,10 @@ form fieldset input, select {
 }
 
 form fieldset #preview {
+    margin: auto;
+    width: 90%;
+    height: fit-content;
+    min-width: 310px;
     background-color: white;
     text-align: center;
     font-size: 16px;
