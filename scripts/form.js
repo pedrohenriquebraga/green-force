@@ -1,27 +1,49 @@
-let selectStates = document.querySelector("select#state")
-console.log(selectStates)
-
-
 function addStates() {
-    axios.get("https://servicodados.ibge.gov.br/api/v1/localidades/estados").then((data, err) => {
+    let inputStates = document.querySelector("select#state")
+    axios.get("https://servicodados.ibge.gov.br/api/v1/localidades/estados?orderBy=nome").then((states, err) => {
         if (err) {
             return console.error(err)
         }
         else {
-            for (state of data.data) {
-                selectStates.innerHTML += `<option value="${state.id}">${state.nome}</option>`
+            for (state of states.data) {
+                inputStates.innerHTML += `<option value="${state.id}">${state.nome}</option>`
             } 
         }
     })
 }
 
-selectStates.addEventListener("load", addStates())
+addStates()
 
-function addCities() {
-    let selectCities = document.querySelector("select#city")
-    let ufValue = event.target.value
+function addCities(event) {
+    const inputStates = document.querySelector("select#state")
+    const inputCities = document.querySelector("select#city")
 
-    console.log(selectStates.attributes)
+    inputCities.innerHTML = ''
+    inputCities.disabled = true
+
+    const ufValue = event.target.value
+    const indexOfState = event.target.selectedIndex
+
+    const url = `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${ufValue}/municipios?orderBy=nome`
+
+    axios.get(url).then((cities, err) => {
+        if (err) {
+            return console.error(err)
+        }
+        else {
+            for (city of cities.data) {
+                inputCities.innerHTML += `<option value="${city.id}">${city.nome}</option>`
+            } 
+        }
+
+    })
+    inputCities.disabled = false
+
 }
 
-addCities
+document.querySelector("select#state").addEventListener("change", addCities)
+
+function preview() {
+    const boxOfPreview = document.querySelector("div#preview")
+    const titlePreview
+}
