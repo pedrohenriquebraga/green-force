@@ -67,6 +67,10 @@ form fieldset {
     border: 0.5px solid rgb(0, 0, 0);
 }
 
+form fieldset h3 {
+    font-size: 25px;
+}
+
 
 form fieldset input, select {
     font-size: 16px;
@@ -83,11 +87,12 @@ form fieldset #preview {
     text-align: center;
     font-size: 16px;
     border-radius: 5px;
-    padding: 1px;
+    padding: 5px;
+    margin: 15px;
 }
 
 form fieldset #preview img {
-    width: 70%;
+    width: 80%;
     border-radius: 5px;
 }
 
@@ -105,8 +110,14 @@ form fieldset button {
     width: 80%;
     margin: auto;
     text-align: center;
-    background-color: rgb(1, 204, 102);
+    background-color: #01cc66;
     color: white;
     font-weight: bold;
     border: none;
+    border-radius: 5px;
+    transition: 200ms;
+}
+
+form fieldset button:hover {
+    background-color: #02db6f;
 }

@@ -25,8 +25,9 @@
         <p>Vale ressaltar que sua imagem aparecerá em nosso mural na <a href="/index.html">Página Inicial</a>, então tire uma boa foto! Nosso objetivo é mostrar que com a ajuda de todos o mundo pode ser salvo!</p>
     </section>
 
-    <form action="" method="post">
+    <form action="/save" method="post">
         <fieldset>
+            <h3>Dados Pessoais</h3>
             <label for="name">Nome</label>
             <input type="text" name="name" id="name" required>
 
@@ -40,10 +41,11 @@
             <select name="city" id="city" disabled="disabled" required></select>
         </fieldset>
         <fieldset>
-            <label for="title">Título da imagem</label>
+            <h3>Publicação</h3>
+            <label for="title">Título</label>
             <input type="text" name="title" id="title">
 
-            <label for="desc">Descrição da Imagem</label>
+            <label for="desc">Descrição</label>
             <input type="text" name="desc" id="desc">
 
             <label for="image">URL da imagem</label>
