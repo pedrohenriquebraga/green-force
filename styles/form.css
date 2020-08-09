@@ -49,6 +49,8 @@ section {
 section img {
     width: 50%;
     min-width: 310px;
+    border: 5px solid rgb(0, 199, 99);
+    border-radius: 5px;
 }
 
 section a {
@@ -82,9 +84,10 @@ form fieldset input, select {
     display: flex;
     flex-direction: column;
     padding: 10px;
-    width: 95%;
+    width: 100%;
     border-radius: 5px;
     border: none;
+    box-sizing: border-box;
 }
 
 form fieldset #preview {
@@ -98,6 +101,10 @@ form fieldset #preview {
     border-radius: 5px;
     padding: 5px;
     margin: 15px;
+}
+form fieldset #preview #author {
+    margin-top: -15px;
+    color: #7a7979;
 }
 
 form fieldset #preview img {
@@ -127,6 +134,12 @@ form fieldset button {
     transition: 200ms;
 }
 
+
+
 form fieldset button:hover {
     background-color: #02db6f;
+}
+
+form fieldset button.noValid {
+    background-color: grey;
 }

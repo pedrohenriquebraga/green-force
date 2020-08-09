@@ -6,7 +6,7 @@
     <title>Ajude o Meio Ambiente</title>
     <link rel="stylesheet" href="styles/form.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js" integrity="sha512-VZ6m0F78+yo3sbu48gElK4irv2dzPoep8oo9LEjxviigcnnnNvnTOJRSrIhuFk68FMLOpiNz+T77nNY89rnWDg==" crossorigin="anonymous"></script>
+    
 </head>
 <body>
     <header>
@@ -25,41 +25,45 @@
         <p>Vale ressaltar que sua imagem aparecerá em nosso mural na <a href="/index.html">Página Inicial</a>, então tire uma boa foto! Nosso objetivo é mostrar que com a ajuda de todos o mundo pode ser salvo!</p>
     </section>
 
-    <form action="" method="post">
-        <fieldset>
+    <p style="color: red;"><strong>Preencha todos os campos para prosseguir</strong></p>
+    <form action="" method="post" onkeyup="validationInputs()" onload="validationInputs()">
+        <fieldset onkeyup="preview()">
             <h3>Dados Pessoais</h3>
             <label for="name">Nome</label>
-            <input type="text" name="name" id="name" required>
+            <input class="input" type="name" name="name" id="name" required>
 
             <label for="email">Email</label>
-            <input type="email" name="email" id="email" required>
+            <input class="input" type="email" name="email" id="email" required>
 
             <label for="state">Selecione seu estado</label>
-            <select name="state" id="state" required></select>
+            <select class="input" name="state" id="state" required >
+            </select>
 
             <label for="city">Selecione sua cidade</label>
-            <select name="city" id="city" disabled="disabled" required></select>
+            <select class="input" name="city" id="city" disabled="disabled" required></select>
         </fieldset>
         <fieldset onkeyup="preview()">
             <h3>Publicação</h3>
             <label for="title">Título</label>
-            <input type="text" name="title" id="title" required>
+            <input class="input" type="text" name="title" id="title" required>
 
-            <label for="desc">Descrição</label>
-            <input type="text" name="desc" id="desc" required>
+            <label for="desc">Conte porque resolveu plantar a árvore</label>
+            <input class="input" type="text" name="desc" id="desc" required>
 
             <label for="image">URL da imagem</label>
-            <input type="url" name="image" id="image" required>
+            <input class="input" type="url" name="image" id="image" required>
 
             <div id="preview">
                 <h3>Título</h3>
+                <p id="author">Autor: Desconhecido</p>
                 <img src="imagens/plantando-arvore.jpg" alt="Imagem a ser enviada">
-                <p><em>Descrição da imagem acima</em></p>
+                <p><em>Conte porque resolveu plantar a árvore</em></p>
             </div>
-            <button type="submit">Enviar</button>
+            <button type="submit" class="noValid">Enviar</button>
         </fieldset>
     </form>
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js" integrity="sha512-VZ6m0F78+yo3sbu48gElK4irv2dzPoep8oo9LEjxviigcnnnNvnTOJRSrIhuFk68FMLOpiNz+T77nNY89rnWDg==" crossorigin="anonymous"></script>
     <script src="scripts/form.js"></script>
 </body>
 </html>

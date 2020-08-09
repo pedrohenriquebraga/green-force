@@ -1,3 +1,6 @@
+const inputs = document.querySelectorAll(".input")
+const button = document.querySelector("button")
+
 function addStates() {
     let inputStates = document.querySelector("select#state")
     axios.get("https://servicodados.ibge.gov.br/api/v1/localidades/estados?orderBy=nome").then((states, err) => {
@@ -7,8 +10,10 @@ function addStates() {
         else {
             for (state of states.data) {
                 inputStates.innerHTML += `<option value="${state.id}">${state.nome}</option>`
-            } 
+            }
+            addCities()
         }
+        
     })
 }
 
@@ -19,8 +24,13 @@ function addCities(event) {
 
     inputCities.innerHTML = ''
     inputCities.disabled = true
+    let ufValue;
 
-    const ufValue = event.target.value
+    try {
+        ufValue = event.target.value
+    } catch (error) {
+        ufValue = "12"
+    }
 
     const url = `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${ufValue}/municipios?orderBy=nome`
     axios.get(url).then((cities, err) => {
@@ -37,19 +47,39 @@ function addCities(event) {
     inputCities.disabled = false
 }
 
-document.querySelector("select#state").addEventListener("change", addCities)
+document.querySelector("select#state").addEventListener("change" , addCities) 
 
 function preview() {
-    const title = document.querySelector("#title").value
-    const image = document.querySelector("#image").value
-    const desc = document.querySelector("#desc").value
+    const title = document.querySelector("#title").value,
+        author = document.querySelector("#name").value,
+        image = document.querySelector("#image").value,
+        desc = document.querySelector("#desc").value
 
-    const imgOfPreview = document.querySelector("div#preview img")
-    const titlePreview = document.querySelector("div#preview h3")
-    const descPreview = document.querySelector("div#preview p em")
+    const imgOfPreview = document.querySelector("div#preview img"),
+        titlePreview = document.querySelector("div#preview h3"),
+        authorPreview = document.querySelector("div#preview #author"),
+        descPreview = document.querySelector("div#preview p em")
 
     titlePreview.innerHTML = title || "Título"
-    descPreview.innerHTML = desc || "Descrição"
+    authorPreview.innerText = `Autor: ${author}` || "Autor: Desconhecido"
+    descPreview.innerHTML = desc || "Conte porque resolveu plantar a árvore"
     imgOfPreview.setAttribute("src", image)
 
 }
+
+function validationInputs() {    
+    for (input of inputs) {
+        if (input.value == "") {
+            button.disabled = true
+            button.classList.add("noValid")
+            input.style.border = "1.5px solid red"
+            break
+        } else {
+            button.disabled = false
+            button.classList.remove("noValid")
+            input.style.border = "1.5px solid #01cc66"
+        }
+    }
+}
+
+validationInputs()
