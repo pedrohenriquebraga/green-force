@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ajude o Meio Ambiente</title>
     <link rel="stylesheet" href="styles/form.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
 </head>
 <body>
     <header>
-        <a href="/index.html"><span class="fa fa-home">Home</span></a>
+        <a href="/index.html">  Retornar a Home</a>
         <h1><a href="/index.html">Green Force</a></h1>
     </header>
     <h2>Ajudando o Meio Ambiente</h2>
@@ -53,14 +51,15 @@
             <label for="image">URL da imagem</label>
             <input class="input" type="url" name="image" id="image" required>
 
-            <div id="preview">
-                <h3>Título</h3>
-                <p id="author">Autor: Desconhecido</p>
-                <img src="imagens/plantando-arvore.jpg" alt="Imagem a ser enviada">
-                <p><em>Conte porque resolveu plantar a árvore</em></p>
-            </div>
+            
             <button type="submit" class="noValid">Enviar</button>
         </fieldset>
+        <div id="preview">
+            <h3>Título</h3>
+            <p id="author">Autor: Desconhecido</p>
+            <img src="imagens/imagem_preview.jpg" alt="Imagem a ser enviada">
+            <p><em>Conte porque resolveu plantar a árvore</em></p>
+        </div>
     </form>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js" integrity="sha512-VZ6m0F78+yo3sbu48gElK4irv2dzPoep8oo9LEjxviigcnnnNvnTOJRSrIhuFk68FMLOpiNz+T77nNY89rnWDg==" crossorigin="anonymous"></script>

@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
 
+html {
+    font-size: 62.5%;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
@@ -20,30 +24,30 @@ header {
 }
 
 header h1 a {
-    margin-left: 20px;
+    margin-left: 2.0rem;
     text-decoration: none;
     color: rgb(1, 102, 51);
-    font-size: 55px;
+    font-size: 5.5rem;
     font-family: 'Amatic SC' ,cursive;
 }
 
-header span {
-    font-size: 18px;
+header a {
+    font-size: 1.8rem;
     text-decoration: none;
-    margin-right: 20px;
+    margin-right: 2.0rem;
     color: #0400ff;
     transition: 200ms;
 }
 
 
 section {
-    padding: 5px;
+    padding: 0.5rem;
     display: flex;
     align-items: center;
     align-content: center;
     flex-direction: column;
     text-align: justify;
-    font-size: 18px;
+    font-size: 1.8rem;
 }
 
 section img {
@@ -60,69 +64,70 @@ section a {
 }
 
 form {
-
-    height: fit-content;
+    height: max-content;
     background-color: rgb(201, 201, 201);
     margin: auto;
     width: 50%;
     min-width: 310px;
     border-radius: 6px;
+    padding-bottom: 2.0rem;
 }
 
 form fieldset {
     border-radius: 5px;
-    border: 0.5px solid rgb(0, 0, 0);
+    border: 0.5px dashed rgb(0, 0, 0);
 }
 
 form fieldset h3 {
-    font-size: 25px;
+    font-size: 2.5rem;
 }
 
 
 form fieldset input, select {
-    font-size: 16px;
+    font-size: 1.6rem;
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 1.0rem;
     width: 100%;
     border-radius: 5px;
     border: none;
     box-sizing: border-box;
 }
 
-form fieldset #preview {
+form #preview {
     margin: auto;
     width: 90%;
     height: fit-content;
-    min-width: 310px;
     background-color: white;
     text-align: center;
-    font-size: 16px;
+    font-size: 1.6rem;
     border-radius: 5px;
-    padding: 5px;
-    margin: 15px;
+    padding: 0.5rem;
+    margin-top: 2.0rem;
+    box-sizing: border-box;
 }
-form fieldset #preview #author {
-    margin-top: -15px;
+form #preview #author {
+    margin-top: -1.5rem;
     color: #7a7979;
 }
 
-form fieldset #preview img {
+form #preview img {
     width: 80%;
     border-radius: 5px;
+
 }
 
 
-form fieldset label {
-    font-size: 13px;
+form label {
+    font-size: 1.3rem;
     font-weight: bold;
-    margin: 5px;
+    margin: 0.5rem;
     display: flex;
     justify-content: flex-start;
 }
 
 form fieldset button {
-    padding: 10px;
+    padding: 1.0rem;
     width: 80%;
     margin: auto;
     text-align: center;
@@ -132,9 +137,8 @@ form fieldset button {
     border: none;
     border-radius: 5px;
     transition: 200ms;
+    margin-top: 1.0rem;
 }
-
-
 
 form fieldset button:hover {
     background-color: #02db6f;
@@ -142,4 +146,19 @@ form fieldset button:hover {
 
 form fieldset button.noValid {
     background-color: grey;
+}
+
+@media (max-width: 700px) {
+    html {
+        font-size: 52%;
+    }
+
+    header h1 a {
+        font-size: 4.5rem;
+    }
+
+    header a {
+        font-size: 1.4rem;
+    }
+
 }

@@ -60,10 +60,10 @@ function preview() {
         authorPreview = document.querySelector("div#preview #author"),
         descPreview = document.querySelector("div#preview p em")
 
-    titlePreview.innerHTML = title || "Título"
+    titlePreview.innerText = title || "Título"
     authorPreview.innerText = `Autor: ${author}` || "Autor: Desconhecido"
-    descPreview.innerHTML = desc || "Conte porque resolveu plantar a árvore"
-    imgOfPreview.setAttribute("src", image)
+    descPreview.innerText = desc || "Conte porque resolveu plantar a árvore"
+    imgOfPreview.setAttribute("src", image || "/imagens/imagem_preview.jpg")
 
 }
 
