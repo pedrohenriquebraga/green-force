@@ -50,7 +50,7 @@ function addCities(event) {
 document.querySelector("select#state").addEventListener("change" , addCities) 
 
 function preview() {
-    const title = document.querySelector("#title").value,
+    let title = document.querySelector("#title").value,
         author = document.querySelector("#name").value,
         image = document.querySelector("#image").value,
         desc = document.querySelector("#desc").value

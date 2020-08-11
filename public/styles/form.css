@@ -71,14 +71,14 @@ form {
     background-color: rgb(201, 201, 201);
     margin: auto;
     width: 50%;
-    min-width: 310px;
+    min-width: 290px;
     border-radius: 6px;
-    padding-bottom: 2.0rem;
+    padding: 1.5rem;
 }
 
 form fieldset {
     border-radius: 5px;
-    border: 0.5px dashed rgb(0, 0, 0);
+    border: none;
 }
 
 form fieldset h3 {
@@ -95,6 +95,10 @@ form fieldset input, select {
     border-radius: 5px;
     border: none;
     box-sizing: border-box;
+}
+
+form fieldset #desc {
+    height: fit-content;
 }
 
 form #preview {
