@@ -1,0 +1,25 @@
+{
+  "name": "green-force",
+  "version": "1.0.0",
+  "description": "***Green Force*** é um projeto meu para testar meu conhecimentos em Html/Css/Js e ao mesmo tempo concientizar as pessoas que devemos cuidar do meio ambiente.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pedrohenriquebraga/green-force.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pedrohenriquebraga/green-force/issues"
+  },
+  "homepage": "https://github.com/pedrohenriquebraga/green-force#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "html": "^1.0.0",
+    "mime-types": "^2.1.27",
+    "nodemon": "^2.0.4"
+  }
+}
