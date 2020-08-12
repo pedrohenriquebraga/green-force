@@ -6,7 +6,7 @@
     <title>Green Force</title>
     <link rel="stylesheet" href="/styles/style.css">
 </head>
-<body>
+<body onload="getPosts()">
     <header>
         <h1>Green Force</h1>
         <section id="ajude">
@@ -44,16 +44,9 @@
         
         <p>Abaixo você verá pessoas que ajudaram o meio ambiente e enviaram imagens de sua árvore. Se você também quiser ajudar basta <a href="/new-tree">acessar este link</a>.</p>
 
-        
-        <section id="mural">
-            <div class="post">
-                <h3>Título</h3>
-                <p id="author">Autor: Desconhecido</p>
-                <img src="/imagens/imagem_preview.jpg" alt="Imagem a ser enviada">
-                <p><em>Conte porque resolveu plantar a árvore</em></p>
-            </div>
-        </section>
+        <section id="mural" ></section>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js" integrity="sha512-VZ6m0F78+yo3sbu48gElK4irv2dzPoep8oo9LEjxviigcnnnNvnTOJRSrIhuFk68FMLOpiNz+T77nNY89rnWDg==" crossorigin="anonymous"></script>
     <script src="/scripts/script.js"></script>
 </body>
 </html>

@@ -1,3 +1,4 @@
+
 let time = 5000,
     imagens = document.querySelectorAll(".slide"),
     imagemAtual = 0,
@@ -22,3 +23,31 @@ function comeca() {
 }
 
 window.addEventListener("load", comeca)
+
+function getPosts() {
+    axios.get("http://localhost:3000/api").then((posts, err) => {
+        if (err) {
+            return console.error(err)
+        } else {
+            return showPosts(posts.data)
+        }
+    })
+}
+
+function showPosts(posts) {
+    const mural = document.querySelector("#mural")
+    const contador = document.querySelector("#contador")
+
+    contador.innerText = posts.length
+
+    for (post of posts) {
+        mural.innerHTML += `
+        <div class="post">
+            <h3>${post.title}</h3>
+            <p id="author">Autor: ${post.name}</p>
+            <img src="${post.image}" rel="nofollow external alt="Imagem enviada por ${post.name}">
+            <p><em>${post.desc}</em></p>
+        </div>
+        `
+    }
+}

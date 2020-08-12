@@ -1,7 +1,14 @@
 const express = require("express")
+const cors = require("cors")
 const db = require("./database/db.js")
 const app = express()
 
+const corsOpitions = {
+    origin: "http://localhost:3000",
+    optionsSuccessStatus: 200
+}
+
+app.use(cors())
 app.use(express.static("public"))
 app.use(express.urlencoded({ extended: true }))
 
@@ -47,9 +54,9 @@ app.post("/save", (req, res) => {
 })
 
 app.get("/api", (req, res) => {
-    db.all(`SELECT * FROM posts`, (err, rows) => {
+    db.all(`SELECT name, title, desc, image FROM posts`, (err, rows) => {
         if (err) {
-            return res.json({"error":"404"})
+            return res.json({"error":"true"})
         } else {
             return res.json(rows)
         }

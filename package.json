@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/pedrohenriquebraga/green-force#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "html": "^1.0.0",
     "mime-types": "^2.1.27",
