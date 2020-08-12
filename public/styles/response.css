@@ -1,0 +1,72 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    background-color: springgreen;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    text-align: center;
+}
+
+header h1 a {
+    margin-left: 2.0rem;
+    text-decoration: none;
+    color: rgb(1, 102, 51);
+    font-size: 5.5rem;
+    font-family: 'Amatic SC' ,cursive;
+}
+
+header a {
+    font-size: 1.8rem;
+    text-decoration: none;
+    margin-right: 2.0rem;
+    color: #0400ff;
+    transition: 200ms;
+}
+
+main {
+    width: 100%;
+    margin: auto;
+    margin-top: 12.0rem;
+    text-align: center;
+}
+
+main h2 {
+    font-size: 2.8rem;
+}
+
+main p {
+    font-size: 2.5rem;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(3, 209, 106);
+    transition: 200ms;
+}
+
+main a:hover {
+    color: rgb(4, 231, 118);
+}
+
+main img {
+    width: 10.0rem;
+    height: 10.0rem;
+}
+
+@media (max-width: 700px) {
+    html {
+        font-size: 45%;
+    }
+}

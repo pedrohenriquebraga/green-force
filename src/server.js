@@ -46,9 +46,9 @@ app.post("/save", (req, res) => {
     db.run(query, values, (err) => {
         if (err) {
             console.error(err)
-            return res.send("Falha no cadastro")
+            return res.sendFile(__dirname + "/views/response-error.html")
         } else {
-            return res.send("Cadastro concluído!!")
+            return res.sendFile(__dirname + "/views/response-success.html")
         }
     })
 })

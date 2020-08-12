@@ -164,6 +164,7 @@ main span {
 main span #contador {
     font-size: 2.5rem;
     margin-top: -0.5rem;
+    margin-left: 0.5rem;
     color: #03b65d;
 }
 
@@ -179,7 +180,7 @@ main span #contador {
 
 #mural .post {
     margin: auto;
-    width: 60%;
+    width: 80%;
     height: fit-content;
     background-color: white;
     text-align: center;
