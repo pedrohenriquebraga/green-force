@@ -39,7 +39,7 @@ function addCities(event) {
         }
         else {
             for (city of cities.data) {
-                inputCities.innerHTML += `<option value="${city.id}">${city.nome}</option>`
+                inputCities.innerHTML += `<option value="${city.nome}">${city.nome}</option>`
             } 
         }
 
@@ -61,7 +61,7 @@ function preview() {
         descPreview = document.querySelector("div#preview p em")
 
     titlePreview.innerText = title || "Título"
-    authorPreview.innerText = `Autor: ${author}` || "Autor: Desconhecido"
+    authorPreview.innerText = `Autor(a): ${author}` || "Autor: Desconhecido"
     descPreview.innerText = desc || "Conte porque resolveu plantar a árvore"
     imgOfPreview.setAttribute("src", image || "/imagens/imagem_preview.jpg")
 

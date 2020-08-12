@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ajude o Meio Ambiente</title>
-    <link rel="stylesheet" href="/public/styles/form.css">
+    <link rel="stylesheet" href="/styles/form.css">
 </head>
 <body>
     <header>
@@ -13,7 +13,7 @@
     </header>
     <h2>Ajudando o Meio Ambiente</h2>
     <section>
-        <img src="/public/imagens/plantando-arvore.jpg" alt="Foto de uma pessoa plantando uma árvore.">
+        <img src="/imagens/plantando-arvore.jpg" alt="Foto de uma pessoa plantando uma árvore.">
         <p>Para ajudar o meio ambiente não precisa de muita coisa. Seu objetivo é simples: </p>
         <ol>
             <li>Plante uma árvore em um bom local.</li>
@@ -24,7 +24,7 @@
     </section>
 
     <p style="color: red;font-size: 1.6rem;"><strong>Preencha todos os campos para prosseguir</strong></p>
-    <form action="" method="post" onkeyup="validationInputs()" onload="validationInputs()">
+    <form action="/save" method="post" onkeyup="validationInputs()" onload="validationInputs()">
         <fieldset onkeyup="preview()">
             <h3>Dados Pessoais</h3>
             <label for="name">Nome</label>
@@ -34,7 +34,7 @@
             <input class="input" type="email" name="email" id="email" required>
 
             <label for="state">Selecione seu estado</label>
-            <select class="input" name="state" id="state" required >
+            <select class="input" name="state" id="state" required>
             </select>
 
             <label for="city">Selecione sua cidade</label>
@@ -56,13 +56,13 @@
         </fieldset>
         <div id="preview">
             <h3>Título</h3>
-            <p id="author">Autor: Desconhecido</p>
-            <img src="/public/imagens/imagem_preview.jpg" alt="Imagem a ser enviada">
+            <p id="author">Autor(a)</p>
+            <img src="/imagens/imagem_preview.jpg" alt="Imagem a ser enviada">
             <p><em>Conte porque resolveu plantar a árvore</em></p>
         </div>
     </form>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js" integrity="sha512-VZ6m0F78+yo3sbu48gElK4irv2dzPoep8oo9LEjxviigcnnnNvnTOJRSrIhuFk68FMLOpiNz+T77nNY89rnWDg==" crossorigin="anonymous"></script>
-    <script src="/public/scripts/form.js"></script>
+    <script src="/scripts/form.js"></script>
 </body>
 </html>

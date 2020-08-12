@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green Force</title>
-    <link rel="stylesheet" href="/public/styles/style.css">
+    <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
     <header>
@@ -16,13 +16,13 @@
     </header>
     <article>
         <section class="arvores">
-            <img src="/public/imagens/arvores-caidas.jpg" alt="Imagem ilustrando o desmantamento no mundo com várias árvores caídas">
+            <img src="/imagens/arvores-caidas.jpg" alt="Imagem ilustrando o desmantamento no mundo com várias árvores caídas">
             <p>Sabia que mais de 10 bilhões de árvores <br> são derrubadas todos os anos no mundo inteiro?</p>
         </section>
     </article>
     <article>
         <section class="arvores" id="plantadas">
-            <img src="/public/imagens/reflorestamento.jpg" alt="Imagem ilustrando o quanto de árvores devem ser plantadas para conter o aquecimento global.">
+            <img src="/imagens/reflorestamento.jpg" alt="Imagem ilustrando o quanto de árvores devem ser plantadas para conter o aquecimento global.">
             <p>Para conter o aquecimento global, <br> é preciso plantar mais de 1 trilhão de árvores.</p>
         </section>
     </article>
@@ -30,18 +30,30 @@
         <section id="slider">
             <h3>O desmatamento da Amazônia aumenta a cada ano.</h3>
             <section id="slide">
-                <img class="slide selecionada" src="/public/imagens/desmatamento-I.jpg" alt="Grande área da Amazônia desmatada">
-                <img class="slide" src="/public/imagens/desmatamento-II.jpg" alt="Grande área da Amazônia desmatada">
-                <img class="slide" src="/public/imagens/desmatamento-III.webp" alt="Grande área da Amazônia desmatada">
+                <img class="slide selecionada" src="/imagens/desmatamento-I.jpg" alt="Grande área da Amazônia desmatada">
+                <img class="slide" src="/imagens/desmatamento-II.jpg" alt="Grande área da Amazônia desmatada">
+                <img class="slide" src="/imagens/desmatamento-III.webp" alt="Grande área da Amazônia desmatada">
             </section>
         </section>
     </aside>
 
+    <main>
+        <h2>Venha ajudar nossa causa, plante uma árvore</h2>
+        <span>Árvores plantadas: <span id="contador">0</span></span>
+        <p>Plante uma árvore e <a href="/new-tree">mande para nós</a>, onde colocaremos aqui na página principal a foto da árvore com seu nome, mostrando assim que ainda existem pessoas que se preocupam com o meio ambiente.</p>
+        
+        <p>Abaixo você verá pessoas que ajudaram o meio ambiente e enviaram imagens de sua árvore. Se você também quiser ajudar basta <a href="/new-tree">acessar este link</a>.</p>
 
-
-
-
-
-    <script src="/public/scripts/script.js"></script>
+        
+        <section id="mural">
+            <div class="post">
+                <h3>Título</h3>
+                <p id="author">Autor: Desconhecido</p>
+                <img src="/imagens/imagem_preview.jpg" alt="Imagem a ser enviada">
+                <p><em>Conte porque resolveu plantar a árvore</em></p>
+            </div>
+        </section>
+    </main>
+    <script src="/scripts/script.js"></script>
 </body>
 </html>

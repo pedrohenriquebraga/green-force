@@ -34,6 +34,7 @@ header h2 {
     margin-top: -200px;
 }
 
+
 header a {
     text-decoration: none;
     color: white;
@@ -110,7 +111,7 @@ aside #slider #slide {
 }
 
 aside #slider #slide .slide {
-    width: 80%;
+    width: 65%;
     max-width: 1500px;
     min-width: 300px;
     height: 70vh;
@@ -126,6 +127,79 @@ aside #slider #slide .slide {
 aside #slider #slide .slide.selecionada {
     opacity: 1;
 }
+
+main {
+    font-size: 18px;
+    width: 70%;
+    min-width: 300px;
+    margin: auto;
+    height: 90vh;
+    padding: 5px;
+}
+
+main h2 {
+    font-size: 30px;
+    color: rgb(2, 168, 85);
+    text-align: center;
+}
+
+main p a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #02c262;
+    transition: 200ms;
+}
+
+main p a:hover {
+    color: #00dd6f;
+}
+
+main span {
+    display: flex;
+    justify-content: flex-start;
+    font-weight: bold;
+    color: #00dd6f;
+}
+
+main span #contador {
+    font-size: 25px;
+    margin-top: -5px;
+    color: #03b65d;
+}
+
+#mural {
+    width: 100%;
+    min-width: 300px;
+    max-width: 60vw;
+    margin: auto;
+    border-radius: 5px;
+    padding: 5px;
+    background-image: linear-gradient(springgreen, #00ff80d7);
+}
+
+#mural .post {
+    margin: auto;
+    width: 60%;
+    height: fit-content;
+    background-color: white;
+    text-align: center;
+    font-size: 1.6rem;
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin-top: 2.0rem;
+    box-sizing: border-box;
+}
+#mural .post #author {
+    margin-top: -1.5rem;
+    color: #7a7979;
+}
+
+#mural .post img {
+    width: 80%;
+    border-radius: 5px;
+
+}
+
 
 
 @media (min-width: 1800px) {
@@ -206,7 +280,7 @@ aside #slider #slide .slide.selecionada {
 
 @media (max-width: 425px) {
     html {
-        font-size: 43%;
+        font-size: 40%;
 
     }
 
