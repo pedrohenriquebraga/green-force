@@ -7,7 +7,7 @@ Para conter o **aquecimento global** precisamos plantar mais de **1 Trilhão** d
 
 O funcionamento do site é **bem simples**. Temos a *página principal* onde existe algumas informações como os **números do desmatamento no mundo**, mostra o **desmatamento na Amazônia** e algumas outras informações. Além disso, tem o **mural**, onde é **apresentado às imagens** que as pessoas enviaram junto com o **nome, título e uma descrição** que a pessoa colocou.
 
-Para fazer a publicação no mural, existe um formulário, onde a pessoa informa:
+Para fazer a publicação no mural, existe um *formulário*, onde a pessoa informa:
 - Nome
 - Email
 - Estado
@@ -16,4 +16,4 @@ Para fazer a publicação no mural, existe um formulário, onde a pessoa informa
 - Imagem da Árvore (através de link)
 - Descrição
 
-Depois disso, a publicação é cadastrada no nosso banco de dados e é apresentada na página inicial em alguns segundos.
+Depois disso, a publicação é cadastrada no nosso **banco de dados** e é apresentada na *página inicial* em alguns segundos.
