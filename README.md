@@ -17,3 +17,7 @@ Para fazer a publicação no mural, existe um *formulário*, onde a pessoa infor
 - Descrição
 
 Depois disso, a publicação é cadastrada no nosso **banco de dados** e é apresentada na *página inicial* em alguns segundos.
+
+## Quais tecnologias foram usadas no projeto?
+
+Foram usados no frontend HTML/CSS/JS/Axios e no backend NodeJs(express, cors, nodemom)
