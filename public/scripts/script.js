@@ -25,7 +25,7 @@ function comeca() {
 window.addEventListener("load", comeca)
 
 function getPosts() {
-    axios.get("http://localhost:3000/api").then((posts, err) => {
+    axios.get("https://green-force-project.glitch.me/api").then((posts, err) => {
         if (err) {
             return console.error(err)
         } else {
