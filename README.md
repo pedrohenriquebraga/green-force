@@ -25,3 +25,13 @@ Foram usados no frontend **HTML/CSS/JS/Axios** e no backend **NodeJs**(*Express,
 ## 🤔 Minha opinião sobre este projeto
 
 Esse foi o **maior projeto** que realizei sozinho até hoje, e eu acho que me sai muito bem. **Aprendi muito** com ele, principalmente sobre **CSS e JS**. Na minha opinião, ele ficou muito bom, claro que ainda tem muito que melhorar, mas para um projeto **feito em 1 semana e meia**, está ótimo.
+
+### VEJA MAIS SOBRE MIM
+
+ * Acesse meu canal do [YouTube](https://youtube.com/gamesantos)
+ * [Playlist](https://www.youtube.com/playlist?list=PLgjMn24Q0KieV-qjUQuhPn4DWmU5DUsAJ) com vídeos de programação no meu canal 
+ * Me siga no [Instagram](https://instagram.com/pedro_henriquebraga)
+ * Entre no meu [Discord](https://discord.gg/626zVxa)
+ * Veja Meu [LinkedIn](https://www.linkedin.com/in/pedro-henrique-3214251a4)
+
+![Bye Bye!!](https://user-images.githubusercontent.com/62728884/78843508-576f5680-79d9-11ea-9f55-b618848ae94d.gif)
