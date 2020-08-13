@@ -22,4 +22,6 @@ Depois disso, a publicação é cadastrada no nosso **banco de dados** e é apre
 
 Foram usados no frontend **HTML/CSS/JS/Axios** e no backend **NodeJs**(*Express, Cors, Nodemom e SQLite3*).
 
+## 🤔 Minha opinião sobre este projeto
 
+Esse foi o **maior projeto** que realizei sozinho até hoje, e eu acho que me sai muito bem. **Aprendi muito** com ele, principalmente sobre **CSS e JS**. Na minha opinião, ele ficou muito bom, claro que ainda tem muito que melhorar, mas para um projeto **feito em 1 semana e meia**, está ótimo.
