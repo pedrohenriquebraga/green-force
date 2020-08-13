@@ -24,8 +24,8 @@ function comeca() {
 
 window.addEventListener("load", comeca)
 
-function getPosts() {
-    axios.get("http://localhost:3000/api").then((posts, err) => {
+async function getPosts() {
+    await axios.get("http://localhost:3000/api").then((posts, err) => {
         if (err) {
             return console.error(err)
         } else {
@@ -44,8 +44,8 @@ function showPosts(posts) {
         mural.innerHTML += `
         <div class="post">
             <h3>${post.title}</h3>
-            <p id="author">Autor: ${post.name}</p>
-            <img src="${post.image}" rel="nofollow external alt="Imagem enviada por ${post.name}">
+            <p id="author">Autor(a): ${post.name}</p>
+            <img src="${post.image}" rel="nofollow external" alt="Imagem enviada por ${post.name}">
             <p><em>${post.desc}</em></p>
         </div>
         `

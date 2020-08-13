@@ -1,9 +1,9 @@
 const inputs = document.querySelectorAll(".input")
 const button = document.querySelector("button")
 
-function addStates() {
+async function addStates() {
     let inputStates = document.querySelector("select#state")
-    axios.get("https://servicodados.ibge.gov.br/api/v1/localidades/estados?orderBy=nome").then((states, err) => {
+    await axios.get("https://servicodados.ibge.gov.br/api/v1/localidades/estados?orderBy=nome").then((states, err) => {
         if (err) {
             return console.error(err)
         }
@@ -19,7 +19,7 @@ function addStates() {
 
 addStates()
 
-function addCities(event) {
+async function addCities(event) {
     const inputCities = document.querySelector("select#city")
 
     inputCities.innerHTML = ''
@@ -33,7 +33,7 @@ function addCities(event) {
     }
 
     const url = `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${ufValue}/municipios?orderBy=nome`
-    axios.get(url).then((cities, err) => {
+    await axios.get(url).then((cities, err) => {
         if (err) {
             return console.error(err)
         }
