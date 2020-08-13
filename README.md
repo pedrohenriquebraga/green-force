@@ -20,6 +20,6 @@ Depois disso, a publicação é cadastrada no nosso **banco de dados** e é apre
 
 ## 🌐 Quais tecnologias foram usadas no projeto?
 
-Foram usados no frontend **HTML/CSS/JS/Axios** e no backend **NodeJs(Express, Cors, Nodemom e SQLite3)**.
+Foram usados no frontend **HTML/CSS/JS/Axios** e no backend **NodeJs**(*Express, Cors, Nodemom e SQLite3*).
 
 
