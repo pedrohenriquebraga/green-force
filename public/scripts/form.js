@@ -3,7 +3,7 @@ const button = document.querySelector("button")
 
 async function addStates() {
     let inputStates = document.querySelector("select#state")
-    await axios.get("https://servicodados.ibge.gov.br/api/v1/localidades/estados?orderBy=nome").then((states, err) => {
+    axios.get("https://servicodados.ibge.gov.br/api/v1/localidades/estados?orderBy=nome").then((states, err) => {
         if (err) {
             return console.error(err)
         }
