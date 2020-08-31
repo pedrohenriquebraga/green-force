@@ -33,7 +33,7 @@ async function addCities(event) {
     }
 
     const url = `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${ufValue}/municipios?orderBy=nome`
-    await axios.get(url).then((cities, err) => {
+    await axios.get(url).then(async (cities, err) => {
         if (err) {
             return console.error(err)
         }
