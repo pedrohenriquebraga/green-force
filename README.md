@@ -1,4 +1,7 @@
 # 🌳 Green Force
+
+![Imagem do Green Force](https://github.com/pedrohenriquebraga/portfolio/blob/main/public/Fprojects/green-force-project.jpg)
+
 ***Green Force*** é um projeto meu para testar meu conhecimentos em *NodeJs* e ao mesmo tempo concientizar as pessoas que **devemos cuidar do meio ambiente** e incentivar a **plantação de árvores no mundo**.
 
 Para conter o **aquecimento global** precisamos plantar mais de **1 Trilhão** de árvores. Depois que soube dessa informação eu decidi criar o [Green Force](https://green-force-project.glitch.me/), um site onde pessoas podem **mandar fotos de árvores** que elas plantaram e mostrar que existem pessoas no mundo que querem salvar ele.
