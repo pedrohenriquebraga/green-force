@@ -1,6 +1,6 @@
 # 🌳 Green Force
 
-![Imagem do Green Force](https://github.com/pedrohenriquebraga/portfolio/blob/main/public/Fprojects/green-force-project.jpg)
+![Imagem do Green Force](https://github.com/pedrohenriquebraga/portfolio/blob/main/public/projects/green-force-project.jpg)
 
 ***Green Force*** é um projeto meu para testar meu conhecimentos em *NodeJs* e ao mesmo tempo concientizar as pessoas que **devemos cuidar do meio ambiente** e incentivar a **plantação de árvores no mundo**.
 
